@@ -31,7 +31,7 @@ module SequenceServer
          if geneModelMatch
            return "http://amborella.uga.edu/mgb2/gbrowse/amborella_amtr_v_0_10/?name=EVM_27 prediction #{geneModelMatch[1]}"
          else
-           return "http://asparagus.uga.edu/jbrowse/?loc=#{matches[1]}:#{from}..#{to}"
+           return "http://asparagus.uga.edu/aspbrowser/?loc=#{matches[1]}:#{from}..#{to}"
          end
        else
          matches = options[:sequence_id].match(/^\s*gnl\|(\S+?)\|(\S+).*/)
