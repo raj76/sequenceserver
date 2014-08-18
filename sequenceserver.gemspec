@@ -17,11 +17,11 @@ DESC
   s.add_dependency('sinatra', '~> 1.3.0')
   s.add_dependency('ptools')
 
-  s.add_development_dependency('minitest')
-  s.add_development_dependency('rack-test')
-  s.add_development_dependency('watir-webdriver')
-  s.add_development_dependency('headless')
-  s.add_development_dependency('rspec')
+#  s.add_development_dependency('minitest')
+#  s.add_development_dependency('rack-test')
+#  s.add_development_dependency('watir-webdriver')
+#  s.add_development_dependency('headless')
+#  s.add_development_dependency('rspec')
 
   # gem
   s.files         = Dir['lib/**/*'] + Dir['views/**/*'] + Dir['public/**/*'] + Dir['tests/**/*']
