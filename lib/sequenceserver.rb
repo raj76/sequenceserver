@@ -52,6 +52,9 @@ module SequenceServer
 
       set :log,        Proc.new { Logger.new(STDERR) }
       log.formatter = SinatraLikeLogFormatter.new()
+      
+      set :protection, :except => :frame_options
+
     end
 
     # Local, app configuration settings derived from config.yml.
