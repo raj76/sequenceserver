@@ -27,9 +27,9 @@ module SequenceServer
            from = 1
          end
          seqName = matches[1]
-         geneModelMatch = seqName.match(/evm_27\.model\.(\S+)/)
-         if geneModelMatch
-           return "http://amborella.uga.edu/mgb2/gbrowse/amborella_amtr_v_0_10/?name=EVM_27 prediction #{geneModelMatch[1]}"
+         genomeVersionMatch = seqName.match(/AsOf_v2\.0(\S+)/)
+         if genomeVersionMatch
+           return "http://asparagus.uga.edu/aspv2/?loc=#{matches[1]}:#{from}..#{to}"
          else
            return "http://asparagus.uga.edu/aspbrowser/?loc=#{matches[1]}:#{from}..#{to}"
          end
